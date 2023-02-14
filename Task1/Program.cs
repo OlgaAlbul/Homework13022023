@@ -23,9 +23,12 @@ void FillArray(double[,] matr)
         }
     }
 }
+Console.WriteLine("Enter the number of rows"!);
+int m = int.Parse(Console.ReadLine());
+Console.WriteLine("Enter the number of colomns"!);
+int n = int.Parse(Console.ReadLine());
 
-double[,] matrix = new double[3,4];      
-PrintArray(matrix);
+double[,] matrix = new double[m,n];      
 FillArray(matrix);
 Console.WriteLine();
 PrintArray(matrix);
